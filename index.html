@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Idrees Ahmed — Consultant Neurosurgeon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Shared icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-arrow" viewBox="0 0 20 20">
+        <path d="M4 10h11M10.5 5.5L15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 12 12">
+        <path d="M3 1.5v9l7-4.5z" fill="currentColor" />
+      </symbol>
+      <symbol id="icon-spine" viewBox="0 0 36 36">
+        <g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 6.5h10v2.5h3.5v3.5H23v1.5H13v-1.5H9.5V9H13V6.5z" />
+          <path d="M13 15.5h10v2h3.5v3.5H23v1.5H13v-1.5H9.5v-3.5H13v-2z" />
+          <path d="M13 24h10v2h3.5v3.5H23V31H13v-1.5H9.5V26H13v-2z" />
+        </g>
+      </symbol>
+      <symbol id="icon-chevron" viewBox="0 0 20 20">
+        <path d="M12.5 4.5L7 10l5.5 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="icon-brain" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9.5 4.5a3.5 3.5 0 0 0-3.3 2.3A3.5 3.5 0 0 0 4 10a3.5 3.5 0 0 0 1.4 2.8A3.5 3.5 0 0 0 8.5 18H11V5.5A1.5 1.5 0 0 0 9.5 4.5Z" />
+          <path d="M14.5 4.5a3.5 3.5 0 0 1 3.3 2.3A3.5 3.5 0 0 1 20 10a3.5 3.5 0 0 1-1.4 2.8A3.5 3.5 0 0 1 15.5 18H13V5.5A1.5 1.5 0 0 1 14.5 4.5Z" />
+          <path d="M8 9.5c1 0 1.5.7 1.5 1.5M16 9.5c-1 0-1.5.7-1.5 1.5M8.5 14c.8 0 1.3-.4 1.5-1M15.5 14c-.8 0-1.3-.4-1.5-1" />
+        </g>
+      </symbol>
+      <symbol id="icon-pediatric" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="11.5" r="6.5" />
+          <path d="M12 5c-.8 0-1.5.7-1.5 1.5S11.2 8 12 8" />
+          <path d="M9.5 14.2c1.4 1.1 3.6 1.1 5 0" />
+          <circle cx="9.8" cy="11" r="0.6" fill="currentColor" />
+          <circle cx="14.2" cy="11" r="0.6" fill="currentColor" />
+        </g>
+      </symbol>
+      <symbol id="icon-minimally" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="10.5" cy="10.5" r="5.5" />
+          <path d="M14.5 14.5L19.5 19.5" />
+          <path d="M8.5 9.5h4M8.5 12h4" />
+        </g>
+      </symbol>
+      <symbol id="icon-stereotactic" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="7" />
+          <circle cx="12" cy="12" r="2.2" />
+          <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+        </g>
+      </symbol>
+      <symbol id="icon-nerve" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 18c3-4 5-6 12-12" />
+          <path d="M10 13.5l-4-2.5M13 10.5l-2.5-4.5M14.5 9l4.5 2M11.5 12.5l2.5 4.5" />
+        </g>
+      </symbol>
+      <symbol id="icon-vascular" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20v-7c0-2.5-2-4.5-5-6.5" />
+          <path d="M12 13c0-2.5 2-4.5 5-6.5" />
+          <path d="M9.5 9.5L7 12M14.5 9.5L17 12" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- 1. NAVBAR -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="Dr. Idrees Ahmed, home">
+        <img class="logo-img logo-img--header" src="Assets/logo.png" alt="Dr. Idrees Ahmed" width="394" height="375" />
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#meet" class="nav-link">Meet Dr. Idrees</a></li>
+          <li class="has-dropdown">
+            <button type="button" class="nav-link dropdown-trigger" aria-expanded="false" aria-controls="procDropdown">Procedures</button>
+            <div class="dropdown mega-dropdown" id="procDropdown" role="region" aria-label="Surgical procedures">
+              <ul class="mega-grid">
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-brain" /></svg></span>
+                    <span class="mega-label">Neuro-Oncology</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-pediatric" /></svg></span>
+                    <span class="mega-label">Pediatric Neurosurgery</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-minimally" /></svg></span>
+                    <span class="mega-label">Minimally Invasive Surgery</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-spine" /></svg></span>
+                    <span class="mega-label">Spine Surgery</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-stereotactic" /></svg></span>
+                    <span class="mega-label">Stereotactic Neurosurgery</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-nerve" /></svg></span>
+                    <span class="mega-label">Peripheral Nerve Surgery</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#specialities" class="mega-item">
+                    <span class="mega-icon" aria-hidden="true"><svg class="icon"><use href="#icon-vascular" /></svg></span>
+                    <span class="mega-label">Neurovascular Surgery</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+923215667709" class="header-phone">+92 321 5667709</a>
+        <a href="#appointment" class="btn btn-pill">Book Appointment</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" hidden>
+      <ul class="drawer-list">
+        <li><a href="#meet" class="drawer-link">Meet Dr. Idrees</a></li>
+        <li>
+          <button type="button" class="drawer-link drawer-accordion" aria-expanded="false" aria-controls="drawerProcedures">
+            Procedures <span class="drawer-plus" aria-hidden="true">+</span>
+          </button>
+          <ul class="drawer-sublist" id="drawerProcedures" hidden>
+            <li><a href="#specialities" class="drawer-link">Neuro-Oncology</a></li>
+            <li><a href="#specialities" class="drawer-link">Pediatric Neurosurgery</a></li>
+            <li><a href="#specialities" class="drawer-link">Minimally Invasive Surgery</a></li>
+            <li><a href="#specialities" class="drawer-link">Spine Surgery</a></li>
+            <li><a href="#specialities" class="drawer-link">Stereotactic Neurosurgery</a></li>
+            <li><a href="#specialities" class="drawer-link">Peripheral Nerve Surgery</a></li>
+            <li><a href="#specialities" class="drawer-link">Neurovascular Surgery</a></li>
+          </ul>
+        </li>
+        <li><a href="#testimonials" class="drawer-link">Testimonials</a></li>
+        <li><a href="#appointment" class="drawer-link">Book Appointment</a></li>
+        <li><a href="#footer" class="drawer-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 2. HERO -->
+    <section class="hero" id="overview" aria-labelledby="heroTitle">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="Assets/hero.webm" type="video/webm" />
+        </video>
+      </div>
+      <div class="hero-content">
+        <h1 id="heroTitle"><strong>Let's Reclaim your Quality of Life.</strong></h1>
+        <p>Advanced brain, spine and neurovascular care, delivered with clarity, compassion and an unwavering focus on function.</p>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-dark">Book Appointment</a>
+          <button type="button" class="btn btn-dark" id="watchFilmBtn" aria-haspopup="dialog" aria-controls="filmModal">Watch Film
+            <svg class="icon icon-play" aria-hidden="true"><use href="#icon-play" /></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CREDENTIALS & AFFILIATIONS -->
+    <section class="seen" aria-labelledby="seen-heading">
+      <h2 class="seen-title" id="seen-heading">Credentials &amp; Affiliations</h2>
+      <ul class="seen-list seen-list--logos">
+        <li class="seen-item seen-item--logo">
+          <img src="Assets/cpsp.jpg" alt="CPSP — College of Physicians and Surgeons Pakistan" loading="lazy" />
+        </li>
+        <li class="seen-item seen-item--logo">
+          <img src="Assets/cmh.png" alt="CMH — Combined Military Hospital" loading="lazy" />
+        </li>
+        <li class="seen-item seen-item--logo">
+          <img src="Assets/PSN.png" alt="PSN — Pakistan Society of Neurosurgeons" loading="lazy" />
+        </li>
+        <li class="seen-item seen-item--logo">
+          <img src="Assets/PMDC .png" alt="PMDC — Pakistan Medical and Dental Council" loading="lazy" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. SPECIALITIES -->
+    <section class="specialities" id="specialities" aria-labelledby="specTitle">
+      <div class="spec-grid">
+        <div class="spec-intro">
+          <span class="spec-icon" aria-hidden="true"><svg class="icon"><use href="#icon-spine" /></svg></span>
+          <h2 id="specTitle">Specialities</h2>
+          <p>Comprehensive evaluation and surgical care across adult and pediatric neurosurgery, focused on preserving neurological function and clarity at every step.</p>
+        </div>
+
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/01. Neuro-Oncology.jpg')">
+          <span class="spec-title">Neuro-Oncology</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/spec-pediatric.jpg')">
+          <span class="spec-title">Pediatric Neurosurgery</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/03_ Minimally_Invasive_Surgery.jpg')">
+          <span class="spec-title">Minimally Invasive Surgery</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/04. Spine Surgery.jpg')">
+          <span class="spec-title">Spine Surgery</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/spec-stereotactic.jpg')">
+          <span class="spec-title">Stereotactic Neurosurgery</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/spec-peripheral-nerve.jpg')">
+          <span class="spec-title">Peripheral Nerve Surgery</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+        <a href="#" class="spec-card" data-pending-link="speciality" style="--card-img: url('Assets/spec-neurovascular.jpg')">
+          <span class="spec-title">Neurovascular Surgery</span>
+          <span class="spec-arrow" aria-hidden="true"><svg class="icon"><use href="#icon-arrow" /></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. MEET THE DOCTOR -->
+    <section class="meet" id="meet" aria-labelledby="meetTitle">
+      <div class="meet-grid">
+        <div class="meet-text">
+          <h2 id="meetTitle">Meet Dr. Idrees Ahmed</h2>
+          <!-- PENDING APPROVAL: credentials and wording must be verified by Dr. Idrees -->
+          <p>Dr. Idrees Ahmed is a consultant neurosurgeon (MBBS, FCPS Neurosurgery) providing advanced brain, spine and neurovascular care, with a focus on preserving neurological function.</p>
+          <p>His approach is patient-centered and evidence-based, beginning with a thorough assessment, accurate diagnosis and clear communication. Every plan is individualized, with safety, early complication management and rehabilitation at its core.</p>
+        </div>
+        <div class="meet-portrait" role="img" aria-label="Portrait of Dr. Idrees Ahmed"></div>
+      </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testiTitle">
+      <div class="t-track-wrap" id="tTrackWrap">
+        <div class="t-intro" id="tIntro">
+          <h2 id="testiTitle">Testimonials</h2>
+          <p>Dr. Idrees has had the privilege of supporting patients and families through thoughtful evaluation and care. Read a few general reflections from visitors to the clinic.</p>
+          <div class="t-rating-summary" aria-label="Rated 5.0 out of 5">
+            <span class="t-badge">Patient Reviews</span>
+            <span class="t-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <strong class="t-score">5.0</strong>
+          </div>
+          <a href="#appointment" class="t-more-link">Read More Reviews</a>
+        </div>
+
+        <div class="t-scroller" id="tScroller" tabindex="0" aria-label="Patient testimonials">
+          <article class="t-card t-review">
+            <div class="t-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t-date">Oct 14, 2026</p>
+            <h3>Clear guidance and calm, attentive care.</h3>
+            <p class="t-name">Tariq M.</p>
+            <p class="t-body">Everything was explained in plain language without rushing our questions. Our family felt heard from the first consultation through follow-up, and the clinic team was courteous at every visit.</p>
+          </article>
+
+          <article class="t-card t-review">
+            <div class="t-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t-date">Aug 29, 2026</p>
+            <h3>Thoughtful planning and steady follow-through.</h3>
+            <p class="t-name">Sadia K.</p>
+            <p class="t-body">We appreciated how carefully our options were walked through and how organized the entire process felt. Having straightforward answers and attentive support made a stressful time much easier to navigate.</p>
+          </article>
+
+          <article class="t-card t-review">
+            <div class="t-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t-date">Jul 11, 2026</p>
+            <h3>Respectful communication at every step.</h3>
+            <p class="t-name">Kamran H.</p>
+            <p class="t-body">Dr. Idrees took time to review every detail and answer concerns patiently. Both the consultation and the follow-up visits felt well coordinated, reassuring, and focused on long-term well-being.</p>
+          </article>
+
+          <article class="t-card t-review">
+            <div class="t-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="t-date">May 22, 2026</p>
+            <h3>Reassuring support for patient and family.</h3>
+            <p class="t-name">Nadia R.</p>
+            <p class="t-body">From the initial appointment to checking in on progress afterward, the care felt genuine and well structured. Knowing what to expect at each stage gave our whole household peace of mind.</p>
+          </article>
+        </div>
+
+        <div class="t-controls">
+          <button type="button" class="t-arrow t-arrow--prev" id="tPrev" aria-label="Previous reviews"><svg class="icon"><use href="#icon-chevron" /></svg></button>
+          <button type="button" class="t-arrow t-arrow--next" id="tNext" aria-label="Next reviews"><svg class="icon"><use href="#icon-chevron" /></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CREDENTIALS LOGO STRIP -->
+    <section class="credentials" aria-label="Affiliated hospitals">
+      <div class="cred-box cred-box--two">
+        <div class="cred-logo cred-logo--one">
+          <img src="Assets/Hospital%20One.png" alt="Al Imran Hospital" />
+        </div>
+        <div class="cred-logo cred-logo--two">
+          <img src="Assets/Hospital%202.jpg" alt="Shahida Khaliq Hospital" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BOOK APPOINTMENT FORM -->
+    <section class="appointment" id="appointment" aria-labelledby="apptTitle">
+      <div class="appt-card">
+        <h2 id="apptTitle">How can we help you?</h2>
+
+        <form class="appt-form" id="appointmentForm" action="https://formspree.io/f/xgakqnyn" method="POST">
+          <div class="appt-row">
+            <div class="appt-field">
+              <label for="fullName" class="sr-only">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Full Name" autocomplete="name" required />
+            </div>
+
+            <div class="appt-field">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="appt-row">
+            <div class="appt-field">
+              <label for="phone" class="sr-only">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="tel" required />
+            </div>
+
+            <div class="appt-field appt-select-wrap">
+              <label for="clinic" class="sr-only">Preferred Clinic</label>
+              <select id="clinic" name="clinic" required>
+                <option value="" disabled selected>Preferred Clinic</option>
+                <option value="Ali Imran Hospital, Rawalakot">Ali Imran Hospital — Rawalakot</option>
+                <option value="Shahida Khalique Hospital, Islamabad">Shahida Khalique Hospital — Islamabad</option>
+                <option value="Online / Video Consultation">Online / Video Consultation</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="appt-row appt-row--meta">
+            <fieldset class="appt-fieldset">
+              <legend class="appt-legend">Date of Birth</legend>
+              <div class="appt-dob">
+                <label for="dobMonth" class="sr-only">Month</label>
+                <input type="text" id="dobMonth" name="dobMonth" placeholder="MM" inputmode="numeric" maxlength="2" pattern="\d{2}" />
+                <label for="dobDay" class="sr-only">Day</label>
+                <input type="text" id="dobDay" name="dobDay" placeholder="DD" inputmode="numeric" maxlength="2" pattern="\d{2}" />
+                <label for="dobYear" class="sr-only">Year</label>
+                <input type="text" id="dobYear" name="dobYear" placeholder="YYYY" inputmode="numeric" maxlength="4" pattern="\d{4}" />
+              </div>
+            </fieldset>
+
+            <fieldset class="appt-fieldset">
+              <legend class="appt-legend">Gender</legend>
+              <div class="appt-gender">
+                <label class="appt-radio">
+                  <input type="radio" name="gender" value="Male" />
+                  <span>Male</span>
+                </label>
+                <label class="appt-radio">
+                  <input type="radio" name="gender" value="Female" />
+                  <span>Female</span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="appt-field appt-field--full">
+            <label for="reason" class="appt-label">Reason for consultation</label>
+            <textarea id="reason" name="reason" rows="5" required></textarea>
+          </div>
+
+          <div class="appt-actions">
+            <button type="submit" class="btn btn-outline appt-submit">Request Appointment</button>
+          </div>
+
+          <p class="appt-status" id="apptStatus" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="f-links f-links--left">
+          <a href="#meet">Meet Dr. Idrees</a>
+          <a href="#specialities">Procedures</a>
+          <a href="#testimonials">Testimonials</a>
+        </div>
+
+        <a href="#top" class="f-brand" aria-label="Dr. Idrees Ahmed, home">
+          <img class="logo-img" src="Assets/logo.png" alt="Dr. Idrees Ahmed" width="394" height="375" />
+          <span class="f-wordmark">DR. IDREES</span>
+        </a>
+
+        <div class="f-links f-links--right">
+          <a href="#appointment">Book Appointment</a>
+          <a href="#footer">Contact</a>
+          <a href="#" data-pending-link="privacy" class="f-privacy-desktop">Privacy</a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="f-connect">
+          <div class="f-label">Connect</div>
+          <div class="f-value">
+            <a href="https://www.facebook.com/profile.php?id=100094906574298" target="_blank" rel="noopener noreferrer" class="f-social-link" aria-label="Dr. Idrees Ahmed on Facebook">
+              <svg class="f-fb-svg" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path fill="currentColor" d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="f-address">
+          <div class="f-label">Locations</div>
+          <div class="f-value is-pending-text">
+            CMH Islamabad<br />
+            Ali Imran Hospital, Rawalakot (AJK)<br />
+            Shahida Khalique Hospital, Islamabad
+          </div>
+        </div>
+
+        <div class="f-touch">
+          <div class="f-label f-label--desktop">Get in Touch</div>
+          <div class="f-label f-label--mobile">Contact</div>
+          <div class="f-value">
+            <a href="tel:+923215667709" class="f-phone-link">+92 321 5667709</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <a href="#" data-pending-link="privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Film Modal -->
+  <div class="film-modal" id="filmModal" role="dialog" aria-modal="true" aria-labelledby="filmModalTitle" hidden>
+    <div class="film-modal__backdrop" id="filmBackdrop"></div>
+    <div class="film-modal__dialog">
+      <div class="film-modal__header">
+        <h2 class="film-modal__title" id="filmModalTitle">Dr. Idrees Ahmed — Film</h2>
+        <button type="button" class="film-modal__close" id="filmClose" aria-label="Close video">&times;</button>
+      </div>
+      <div class="film-modal__body">
+        <video id="filmVideo" class="film-modal__video" controls preload="metadata">
+          <source src="Assets/hero.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
