@@ -3503,3 +3503,75 @@ ul {
     left: auto !important;
   }
 }
+/* ==========================================================================
+   MEET SECTION — UNFILTERED #F7F4EE EDGES (::after) + CRISP SPINE (::before)
+   ========================================================================== */
+section#meet.meet {
+  position: relative !important;
+  overflow: hidden !important;
+  background-color: #F7F4EE !important;
+}
+
+/* Layer 1: Crisp, clear spine image */
+section#meet.meet::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background-image: url("Assets/backmeet.webp") !important;
+  background-size: cover !important;
+  background-position: left bottom !important;
+  background-repeat: no-repeat !important;
+  filter: sepia(16%) saturate(50%) brightness(100%) contrast(120%) !important;
+  opacity: 0.9 !important;
+}
+
+/* Layer 2: True unfiltered #F7F4EE fade so edges match adjacent sections 100% */
+section#meet.meet::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background:
+    linear-gradient(
+      180deg,
+      #F7F4EE 0%,
+      rgba(247, 244, 238, 0.15) 18%,
+      rgba(247, 244, 238, 0.15) 82%,
+      #F7F4EE 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(247, 244, 238, 0.08) 0%,
+      rgba(247, 244, 238, 0.5) 48%,
+      #F7F4EE 82%
+    ) !important;
+}
+
+/* Content above both background layers */
+section#meet.meet > .meet-grid {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+@media (max-width: 768px) {
+  section#meet.meet::before {
+    background-size: cover !important;
+    background-position: 62% 35% !important;
+    filter: sepia(16%) saturate(50%) brightness(100%) contrast(118%) !important;
+    opacity: 0.85 !important;
+  }
+
+  section#meet.meet::after {
+    background:
+      linear-gradient(
+        180deg,
+        #F7F4EE 0%,
+        rgba(247, 244, 238, 0.18) 16%,
+        rgba(247, 244, 238, 0.18) 84%,
+        #F7F4EE 100%
+      ) !important;
+  }
+}
